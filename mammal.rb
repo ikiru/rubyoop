@@ -1,16 +1,10 @@
-class Dog < Mammal
-  def pet
-    @health += 5
-    self
+
+class Mammal
+  def initialize
+    @health = 150
   end
 
-  def walk
-    @health -= 1
-    self
-  end
-
-  def run
-    @health -= 10
-    self
+  def display_health
+    puts @health
   end
 end
